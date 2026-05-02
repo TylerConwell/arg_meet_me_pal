@@ -20,6 +20,50 @@
             .text {
                 font-size: 20px;
             }
+
+
+             .typing {
+                white-space: nowrap;
+                overflow: hidden;
+                width: 0;
+                animation: typing 4s steps(40, end) forwards,
+                           blink 0.75s step-end infinite;
+            }
+
+            @keyframes typing {
+                from { width: 0; }
+                to { width: 99%; }
+            }
+
+            @keyframes blink {
+                50% { border-color: transparent; }
+            }   
+
+
+            .hidden {
+                display: none !important;
+            }
+
+            #click-prompt {
+                font-family: Arial, sans-serif;
+                user-select: none; /* Prevents text highlighting on rapid clicking */
+            }
+
+
+            .anolog {
+                text-align: center;
+                color: white;
+                font-family:Arial, Helvetica, sans-serif
+            }
+
+            p {
+                font-size: 20px;
+                text-shadow: 2px 2px black;
+                  
+                background-color: rgba(0, 0, 0, 0.5); /* Black at 50% opacity */
+                padding: 10px;
+                display: flex;
+            }
         </style>
     </head>
 
