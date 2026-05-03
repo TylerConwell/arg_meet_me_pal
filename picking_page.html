@@ -2,14 +2,54 @@
 <html>
     <head>
         <style>
+            body {
+                background-image: url('./public/glitch_glow.gif');
+                background-size: cover;
+            }
+
             header {
-                background-color: rgba(0, 0, 0, 0.5); /* Black at 50% opacity */
+                background-color: rgba(0, 0, 0, 0.5);
                 padding: 10px;
                 margin-left: 100px;
                 margin-right: 100px;
                 margin-top: 50px;
             }
-            
+
+            .title {
+                text-align: center;
+                color: white;
+                font-family:Arial, Helvetica, sans-serif
+            }
+
+            .about {
+                text-align: center;
+                color: white;
+                font-family:Arial, Helvetica, sans-serif
+
+            }
+
+            table {
+                font-family: Arial, Helvetica, sans-serif;
+                border-collapse: collapse;
+                width: 70%;
+                background-color: rgba(0, 0, 0, 0.5);
+                margin-left: auto;
+                margin-right: auto;
+            }
+
+            td, th {
+                border: 2px solid black;
+                text-align: left;
+                padding: 8px;
+                margin: 20px;
+                text-align: center;
+                color: white;
+            }
+
+            .option_button {
+                border-radius: 12px;
+            }
+
             footer {
                 margin-left: 10px;
                 position: fixed;
@@ -19,181 +59,74 @@
             }
 
             .footer_paragraph {
-                background-color: rgba(0, 0, 0, 0.5); /* Black at 50% opacity */
+                background-color: rgba(0, 0, 0, 0.5);
                 color: white;
                 font-size: 20px;
-            }
-
-            body {
-                background-image: url('./public/glitch_glow.gif');
-                background-size: cover;
-            }
-
-            .title {
                 text-align: center;
-                color: white;
-                font-family:Arial, Helvetica, sans-serif
             }
-
-            table {
-                font-family: Arial, Helvetica, sans-serif;
-                border-collapse: collapse;
-                width: 70%;
-                margin-left: 100px;
-                margin-right: 100px;
-            }
-
-            td, th {
-                border: 2px solid black;
-                text-align: left;
-                padding: 8px;
-
-                margin: 20px
-            }
-
-            #separateTable {
-                border-collapse: separate;
-                border-spacing: 5px;
-            }
-
-
-
-
-            /* table tr th:nth-child(1) {
-                padding-right: 50px;
-            }
-
-            
-            table tr th:nth-child(2) {
-                padding: 50px;
-            }
-            
-            table tr th:nth-child(3) {
-                padding: 50px;
-            } */
-
-
-
-            .option_button {
-                border-radius: 12px;
-            }
-
-
-/*        
-            .about {
-                text-align: center;
-                color: white;
-                font-family:Arial, Helvetica, sans-serif
-
-            }
-
-            .anolog {
-                text-align: center;
-                color: white;
-                font-family:Arial, Helvetica, sans-serif
-            }
-
-            p {
-                font-size: 20px;
-                text-shadow: 2px 2px black;
-                background-color: rgba(0, 0, 0, 0.5); 
-                padding: 10px;
-                display: flex;
-            }
-
-            .send_button {
-                background-color: black;
-                font-size: 20px;
-                color: white;
-                border: none;
-                border-radius: 5px;
-                cursor: pointer;
-            }
-
-            .typing {
-                white-space: nowrap;
-                overflow: hidden;
-                width: 0;
-                animation: typing 4s steps(40, end) forwards,
-                           blink 0.75s step-end infinite;
-            }
-
-            @keyframes typing {
-                from { width: 0; }
-                to { width: 99%; }
-            }
-
-            @keyframes blink {
-                50% { border-color: transparent; }
-            }   
-
-            .hidden {
-                display: none !important;
-            }
-
-            #click-prompt {
-                font-family: Arial, sans-serif;
-                user-select: none; 
-            } */
         </style>
     </head>
-
-
-
 
     <header>
         <h1 class="title">How To Make The Perfect Friend</h1>
     </header>
-
-
 
     <body>
         <br>
         <h2 class="about">Try Talking To One Of Our Virtual Pals</h2>
         <br>
 
-
         <table>
             <tr>
-                <th>Option 1</th>
-                <th>Option 2</th>
-                <th>Option 3</th>
+                <th>Basic</th>
+                <th>Pro</th>
+                <th>Mastery</th>
             </tr>
 
             <tr>
-                <td></td>
-
                 <td>
-                    <p>Flexable payment option</p>
+                    Try It Out Now
+                    <br>
+                    <br>
+                    <img src="./public/profile_new_black.png" alt="icon" width="100px">
                 </td>
 
-                <td></td>
+                <td>
+                    6 Flexible Monthly Payments Of
+                    <br>
+                    <br>
+                    <img src="./public/profile_new_black.png" alt="icon" width="100px">
+                </td>
+
+                <td>
+                    1 Payment Of
+                    <br>
+                    <br>
+                    <img src="./public/profile_new_black.png" alt="icon" width="100px">
+                </td>
             </tr>
 
             <tr>
                 <td>Free Tier</td>
-                <td>$199/Month</td>
+                <td>$199 Month</td>
                 <td>$2000 Annual</td>
             </tr>
 
             <tr>
                 <td>
-                    <button class="option_button">Add To Cart</button>
+                    <button class="option_button" onclick="window.location.href='first_option.html';">Continue</button>
                 </td>
 
                 <td>
-                    <button class="option_button">Add To Cart</button>
+                    <button class="option_button" onclick="window.location.href='page.html';">Continue</button>
                 </td>
 
                 <td>
-                    <button class="option_button">Add To Cart</button>
+                    <button class="option_button" onclick="window.location.href='page.html';">Continue</button>
                 </td>
             </tr>
         </table>
-        
     </body>
-
-
 
     <footer>
         <p class="footer_paragraph">&copy; 2026  QuestPals. All rights reserved.</p>
